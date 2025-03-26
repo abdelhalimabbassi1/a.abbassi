@@ -1,0 +1,46 @@
+<!--Abdelhalim ABBASSI-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module de Facturation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Module de Facturation</h1>
+    </header>
+    <main>
+        <table id="facture-table">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Quantité</th>
+                    <th>Prix Unitaire</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="ligne-modele">
+                    <td><input type="text" class="desc"></td>
+                    <td><input type="number" class="qte" min="1" value="1"></td>
+                    <td><input type="number" class="prix" min="0" value="0"></td>
+                    <td class="total-ligne">0</td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="ajouter-ligne">Ajouter Ligne</button>
+        <button id="calculer">Calculer</button>
+        <button id="remplir-auto">Remplir Automatiquement</button>
+        <div id="totaux">
+            <p>Sous-total : <span id="sous-total">0</span> €</p>
+            <p>Remise : <input type="number" id="remise" value="0" min="0" max="100"> %</p>
+            <p>Taxe : <input type="number" id="taxe" value="20" min="0"> %</p>
+            <p>Frais d’expédition : <input type="number" id="frais-expedition" value="0" min="0"> €</p>
+            <p>Total : <span id="total-general">0</span> €</p>
+        </div>
+    </main>
+</body>
+</html>

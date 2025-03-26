@@ -1,0 +1,106 @@
+/* Style général */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 16px;
+    background: #1C1F26; /* Fond bleu nuit moderne */
+    color: #EAEAEA;
+}
+
+/* En-tête */
+header {
+    background: linear-gradient(135deg, #2A2E37, #13161D); /* Dégradé anthracite */
+    text-align: center;
+    color: white;
+    padding: 2px 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Pied de page */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(26, 30, 38, 0.9);
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Menu principal */
+.menuderoulant {
+    display: flex;
+    justify-content: center;
+    background: #222730; /* Bleu nuit/gris anthracite */
+    padding: 15px;
+    list-style: none;
+    margin: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.menuderoulant li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.menuderoulant li a {
+    display: block;
+    color: #EAEAEA;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuderoulant li a:hover {
+    background: #0077B6; /* Bleu professionnel */
+    color: white;
+    box-shadow: 0 3px 6px rgba(0, 119, 182, 0.5);
+}
+
+/* Sous-menu */
+.menuderoulant .sousmenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #2A2E37; /* Fond sombre */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 220px;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    overflow-y: auto;
+    max-height: 250px; /* Scroll si trop d’éléments */
+}
+
+.menuderoulant li:hover .sousmenu {
+    display: block;
+}
+
+.menuderoulant .sousmenu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menuderoulant .sousmenu li a {
+    display: block;
+    padding: 12px 20px;
+    color: #EAEAEA;
+    background: #2A2E37;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuderoulant .sousmenu li a:hover {
+    background: #0077B6;
+    color: white;
+}
